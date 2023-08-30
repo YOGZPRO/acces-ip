@@ -3,9 +3,9 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 
 NC="\e[0m"
 
-APIGIT=$(cat /etc/yogzpro/github/api)
-EMAILGIT=$(cat /etc/yogzpro/github/email)
-USERGIT=$(cat /etc/yogzpro/github/username)
+APIGIT=$(cat /etc/alexxa/github/api)
+EMAILGIT=$(cat /etc/alexxa/github/email)
+USERGIT=$(cat /etc/alexxa/github/username)
 
 
 function setapi(){
@@ -15,10 +15,10 @@ echo -e "$COLOR1 ${NC} ${COLBG1}              • IPVPS GITHUB API •          
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 
-if [[ -f /etc/yogzpro/github/api && -f /etc/yogzpro/github/email && /etc/yogzpro/github/username ]]; then
+if [[ -f /etc/alexxa/github/api && -f /etc/alexxa/github/email && /etc/alexxa/github/username ]]; then
    rec="OK"
 else
-    mkdir /etc/yogzpro/github > /dev/null 2>&1
+    mkdir /etc/alexxa/github > /dev/null 2>&1
 fi
 
 read -p " E-mail   : " EMAIL1
@@ -58,10 +58,10 @@ menu-ip
 fi
 
 sleep 2
-echo "$EMAIL1" > /etc/yogzpro/github/email
-echo "$USERNAME1" > /etc/yogzpro/github/username
-echo "$API1" > /etc/yogzpro/github/api
-echo "ON" > /etc/yogzpro/github/gitstat
+echo "$EMAIL1" > /etc/alexxa/github/email
+echo "$USERNAME1" > /etc/alexxa/github/username
+echo "$API1" > /etc/alexxa/github/api
+echo "ON" > /etc/alexxa/github/gitstat
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}               • REGISTER IPVPS •              ${NC} $COLOR1 $NC"
@@ -451,11 +451,11 @@ menu-ip
 }
 function resetipvps(){
 clear
-rm -f /etc/yogzpro/github/email
-rm -f /etc/yogzpro/github/username
-rm -f /etc/yogzpro/github/api
-rm -f /etc/yogzpro/github/gitstat
-echo "OFF" > /etc/yogzpro/github/gitstat
+rm -f /etc/alexxa/github/email
+rm -f /etc/alexxa/github/username
+rm -f /etc/alexxa/github/api
+rm -f /etc/alexxa/github/gitstat
+echo "OFF" > /etc/alexxa/github/gitstat
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}              • RESET GITUB API •              ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
