@@ -264,14 +264,59 @@ sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dr
 
 # download script
 cd /usr/bin
+wget -O menu "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu.sh"
+wget -O menu-ss "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-ss.sh"
+wget -O menu-vmess "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-vmess.sh"
+wget -O menu-vless "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-vless.sh"
+wget -O menu-trojan "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-trojan.sh"
+wget -O menu-bot "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-bot.sh" 
+wget -O menu-ssh "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-ssh.sh"
+wget -O menu-set "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-set.sh"
+wget -O menu-theme "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-theme.sh"
+wget -O menu-backup "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-backup.sh"
+wget -O menu-ip "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-ip.sh"
+wget -O menu-tor "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-tor.sh"
+wget -O autoboot "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/autoboot.sh"
+wget -O menu-tcp "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-tcp.sh"
+wget -O rebootvps "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/corn/rebootvps.sh"
+wget -O menu-dns "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-dns.sh"
+wget -O info "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/info.sh"
+wget -O mspeed "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-speedtest.sh"
+wget -O mbandwith "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/menu-bandwith.sh"
+wget -O add-tr "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/add-tr"
+wget -O add-ssh "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/add-ssh"
+wget -O add-vmess "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/add-vmess"
+wget -O update "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/update.sh"
 wget -O speedtest "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/ssh/speedtest_cli.py"
 wget -O xp "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/ssh/xp.sh"
 wget -O auto-set "https://raw.githubusercontent.com/YOGZPRO/access-ip/main/xray/auto-set.sh"
-chmod +x speedtest
+
+chmod +x menu
+chmod +x menu-ss
+chmod +x menu-vmess
+chmod +x menu-vless
+chmod +x menu-trojan
+chmod +x menu-bot
+chmod +x menu-ssh
+chmod +x menu-set
+chmod +x menu-theme
+chmod +x menu-backup
+chmod +x menu-ip
+chmod +x menu-tor
+chmod +x autoboot
+chmod +x menu-tcp
+chmod +x rebootvps
+chmod +x menu-dns
+chmod +x info
+chmod +x mspeed
+chmod +x mbandwith
+chmod +x add-tr
+chmod +x add-ssh
+chmod +x add-vmess
+chmod +x update
 chmod +x xp
 chmod +x auto-set
 cd
-
 
 cat > /etc/cron.d/re_otm <<-END
 SHELL=/bin/sh
