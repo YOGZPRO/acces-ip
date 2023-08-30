@@ -274,7 +274,7 @@ d2=$(date -d "$today" +%s)
 certificate=$(( (d1 - d2) / 86400 ))
 
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐$NC"
-echo -e "$COLOR1 $NC Version     :${COLOR1} $(cat /opt/.ver) Latest Version${NC}"
+echo -e "$COLOR1 $NC Version     :${COLOR1} V1.0 Latest Version${NC}"
 echo -e "$COLOR1 $NC Client Name : $Name"
 echo -e "$COLOR1 $NC License     : $certificate days"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘$NC"
