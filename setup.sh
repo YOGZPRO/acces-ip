@@ -288,25 +288,20 @@ echo "   - Backup & Restore Data" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> About " | tee -a log-install.txt
-echo "   - Script Presented By      : Xolva" | tee -a log-install.txt" | tee -a log-install.txt
-echo "   - Contact                  : t.me/xolv4" | tee -a log-install.txt
+echo "   - Script Presented By      : YogzVPN" | tee -a log-install.txt
+echo "   - Contact                  : t.me/YSSHstore" | tee -a log-install.txt
 echo "------------------------------------------------------------"
 echo ""
-echo "=============-[ XolPanel ]-==============="
+echo "=============-[ Yogzzzzzz ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
 rm /root/cf.sh >/dev/null 2>&1
 rm /root/setup.sh >/dev/null 2>&1
-rm /root/insshws.sh 
-rm /root/update.sh
+rm /root/insshws.sh >/dev/null 2>&1
+rm /root/update.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
-echo -ne "[ ${yell}WARNING${NC} ] Do you want to reboot now ? (y/n)? "
-read answer
-if [ "$answer" == "${answer#[Yy]}" ] ;then
-exit 0
-else
-reboot
-fi
+read -n 1 -s -r -p "Press [ ENTER ] back to menu"
+menu
