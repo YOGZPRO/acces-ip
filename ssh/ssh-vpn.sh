@@ -12,11 +12,11 @@ ver=$VERSION_ID
 
 country=ID
 state=Indonesia
-locality=JawaBarat
-organization=XolPanel
-organizationalunit=XolPanel
+locality=none
+organization=none
+organizationalunit=none
 commonname=none
-email=xolvadev@gmail.com
+email=none
 
 # simple password minimal
 curl -sS https://raw.githubusercontent.com/YOGZPRO/access-ip/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
