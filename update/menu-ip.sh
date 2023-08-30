@@ -469,7 +469,7 @@ echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu-ip  
 }
-Isadmin=$(curl -sS https://raw.githubusercontent.com/XolvaID/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+Isadmin=$(curl -sS https://raw.githubusercontent.com/Yogzpro/ip/main/access | grep $MYIP | awk '{print $5}')
 if [ "$Isadmin" = "OFF" ]; then
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
@@ -496,12 +496,12 @@ GITREQ=/etc/yogzpro/github/gitstat
 if [ -f "$GITREQ" ]; then
     cekk="ok"
 else 
-    mkdir /etc/yogzpro/github
-    touch /etc/yogzpro/github/gitstat
-    echo "OFF" > /etc/yogzpro/github/gitstat
+    mkdir /etc/alexxa/github
+    touch /etc/alexxa/github/gitstat
+    echo "OFF" > /etc/alexxa/github/gitstat
 fi
 
-stst1=$(cat /etc/yogzpro/github/gitstat)
+stst1=$(cat /etc/alexxa/github/gitstat)
 if [ "$stst1" = "OFF" ]; then
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
@@ -517,7 +517,7 @@ echo -e ""
 read -n 1 -s -r -p "   Press any key to Set API"
 setapi
 fi
-stst=$(cat /etc/yogzpro/github/gitstat)
+stst=$(cat /etc/alexxa/github/gitstat)
 if [ "$stst" = "ON" ]; then
 APIOK="CEK API"
 rex="viewapi"
