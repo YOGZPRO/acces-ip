@@ -314,6 +314,7 @@ chmod +x add-tr
 chmod +x add-ssh
 chmod +x add-vmess
 chmod +x update
+chmod +x speedtest
 chmod +x xp
 chmod +x auto-set
 cd
