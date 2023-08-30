@@ -212,10 +212,6 @@ wget https://raw.githubusercontent.com/YOGZPRO/access-ip/main/backup/set-br.sh &
 clear
 wget https://raw.githubusercontent.com/YOGZPRO/access-ip/main/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
-echo -e "$green[INFO]$NC Download Extra Menu"
-sleep 2
-wget https://raw.githubusercontent.com/YOGZPRO/access-ip/main/update/update.sh && chmod +x update.sh && ./update.sh
-clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
 
@@ -254,7 +250,7 @@ fi
 curl -sS ifconfig.me > /etc/myipvps
 
 echo " "
-echo "====================-[ XolPanel ]-===================="
+echo "====================-[ YogzVPN ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
